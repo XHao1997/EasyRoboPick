@@ -1,0 +1,6 @@
+[submodule "src/robot_motion"]
+	path = src/robot_motion
+	url = git@github.com:XHao1997/dynamixel_robot_ws.git
+[submodule "src/robot_vision"]
+	path = src/robot_vision
+	url = git@github.com:XHao1997/apriltag_detection_ws.git
