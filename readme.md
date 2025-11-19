@@ -36,7 +36,7 @@ If you already cloned without --recurse-submodules, fix it with:
 ```bash
 git submodule update --init --recursive
 ```
-## Build Workspace
+## 3. Build Workspace
 From the EasyRoboPick root:
 ```bash
 colcon build
@@ -62,15 +62,15 @@ What it does:
 
 Exposes:
 
-    /move_joint topic (move all joints in radians, sync-write)
+- /move_joint topic (move all joints in radians, sync-write)
 
-    /set_position topic (set a single joint in ticks)
+- /set_position topic (set a single joint in ticks)
 
-    /set_multi_position topic (set multiple joints in ticks)
+- /set_multi_position topic (set multiple joints in ticks)
 
-    /get_position service (read joint positions in radians)
+- /get_position service (read joint positions in radians)
 
-## Start the AX-12A Node
+## 5. Start the AX-12A Node
 #### Terminal 1 (from EasyRoboPick root):
     source install/setup.bash
     ros2 run dynamixel_sdk_examples read_write_node
