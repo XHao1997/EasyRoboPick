@@ -75,14 +75,14 @@ Exposes:
     source install/setup.bash
     ros2 run dynamixel_sdk_examples read_write_node
 
-## Move the Robot to Zero Position
+### Move the Robot to Zero Position
 #### Terminal 2 (same directory):
     source install/setup.bash
     ros2 topic pub -1 /move_joint \
     dynamixel_sdk_custom_interfaces/msg/MoveJoint \
     "{joint_positions: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}"
 
-## Read All Joint Positions via Service
+### Read All Joint Positions via Service
 #### Terminal 3:
     source install/setup.bash
     ros2 service call /get_position \
